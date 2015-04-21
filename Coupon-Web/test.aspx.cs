@@ -19,7 +19,7 @@ namespace Coupon_Web.PL
             try
             {
                 conn.open();
-                
+
                 bl.InsertUser("Amitay", "amitay", "12345678"); // customer
                 bl.InsertUser("shimi", "amitay", "12345678"); // manager
                 bl.InsertCategory(1, "Entertainment", "stand-ups, tv-Shows, etc...");
@@ -32,7 +32,7 @@ namespace Coupon_Web.PL
                 bl.InsertCustomerPreference("Amitay", 1);
                 bl.InsertDeal(1, 0, "11111", 1, "Amitay", "Paypal");
                 bl.InsertRates("Amitay", 1, 3, "good");
-                
+
 
                 bool ans = bl.IsBusinessExist(1);
                 Label1.Text = ans.ToString();
@@ -62,6 +62,6 @@ namespace Coupon_Web.PL
                 conn.close();
             }
         }
-            
+
     }
 }

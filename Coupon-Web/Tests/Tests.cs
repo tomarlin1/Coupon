@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Coupon_Web.BL;
-using System.Data.SqlClient;
 using Coupon_Web.DAL;
-using System.IO;
-namespace ClassLibrary1
+
+namespace Tests
 {
-    [TestFixture]
+    [TestClass]
     public class Tests
     {
         private BlRequests bl;
         private Connection conn;
 
-        [SetUp]
+        [TestInitialize]
         public void SetUp()
         {
+           
             conn = new Connection();
             bl = new BlRequests(conn.getSqlCon());
             try
@@ -46,7 +42,7 @@ namespace ClassLibrary1
             { }
         }
 
-        [Test]
+        [TestMethod]
         public void InsertBusinessTest()
         {
             bool before = bl.IsBusinessExist(2);
@@ -56,7 +52,7 @@ namespace ClassLibrary1
             Assert.AreNotEqual(before, after, "should not be equal");
         }
 
-        [Test]
+        [TestMethod]
         public void InsertUserTest()
         {
             bool before = bl.IsUserExist("Tomer");
@@ -66,7 +62,7 @@ namespace ClassLibrary1
             Assert.AreNotEqual(before, after, "should not be equal");
         }
 
-        [Test]
+        [TestMethod]
         public void InsertCouponTest()
         {
             bool before = bl.IsCouponExist(2);
@@ -76,7 +72,7 @@ namespace ClassLibrary1
             Assert.AreNotEqual(before, after, "should not be equal");
         }
 
-        [Test]
+        [TestMethod]
         public void InsertManagerTest()
         {
             bool before = bl.IsManagerExist("haliliAsaf");
@@ -85,7 +81,7 @@ namespace ClassLibrary1
             Assert.AreNotEqual(before, after, "should not be equal");
         }
 
-        [Test]
+        [TestMethod]
         public void InsertDealTest()
         {
             bool before = bl.IsDealExist(2);
@@ -95,7 +91,7 @@ namespace ClassLibrary1
             Assert.AreNotEqual(before, after, "should not be equal");
         }
 
-        [Test]
+        [TestMethod]
         public void DeleteRateTest()
         {
             bl.DeleteRates("Amitay", 1);
@@ -103,7 +99,7 @@ namespace ClassLibrary1
             Assert.AreEqual(after, false, "after should be false");
         }
 
-        [Test]
+        [TestMethod]
         public void DeleteUserTest()
         {
             bl.DeleteUser("Fahima");
@@ -111,7 +107,7 @@ namespace ClassLibrary1
             Assert.AreEqual(after, false, "after should be false");
         }
 
-        [Test]
+        [TestMethod]
         public void DeleteCategoryTest()
         {
             bl.DeleteCategory(4);
@@ -119,7 +115,7 @@ namespace ClassLibrary1
             Assert.AreEqual(after, false, "after should be false");
         }
 
-        [Test]
+        [TestMethod]
         public void DeleteSecurePaymentTest()
         {
             bl.DeleteSecurePayments("Cash");
@@ -127,7 +123,7 @@ namespace ClassLibrary1
             Assert.AreEqual(after, false, "after should be false");
         }
 
-        [Test]
+        [TestMethod]
         public void DeleteSystemManagerTest()
         {
             bl.DeleteSystemManager("shimi");
@@ -136,7 +132,7 @@ namespace ClassLibrary1
         }
 
 
-        [TearDown]
+        [TestCleanup]
         public void TearDown()
         {
             try

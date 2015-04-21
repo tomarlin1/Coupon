@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B88FB02-EB5D-470F-AEEC-D9F0D486DC43}</ProjectGuid>
+    <ProjectGuid>{AC086C86-D20D-4194-BD48-B1C2FBEA3F70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tests</RootNamespace>
@@ -51,13 +51,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Coupon-Web\Coupon-Web.csproj">
-      <Project>{4e9eeadc-ad1f-4484-a83b-da90b3806bfe}</Project>
-      <Name>Coupon-Web</Name>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{7c2b9bb6-1f3f-4dd7-a79b-3384cb999096}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5302fce7-75c8-44db-bfcd-3ed811e587dc}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

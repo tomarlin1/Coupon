@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using Coupon_Web.DAL;
 
@@ -13,7 +10,7 @@ namespace Coupon_Web.DAL
     public class Queries
     {
         private SqlConnection _dbCon;
-        
+
         public Queries(SqlConnection dbCon)
         {
             _dbCon = dbCon;
@@ -39,7 +36,7 @@ namespace Coupon_Web.DAL
 
             //create sqlcommand.
             SqlCommand cmdSql = new SqlCommand(query, _dbCon);
-            
+
             //replace the given values into placeholders.
             for (int i = 0; i < size; i++)
             {
@@ -119,7 +116,7 @@ namespace Coupon_Web.DAL
             String query = "SELECT * FROM [" + tableName + "] " +
                            "WHERE ";
             String pkCond = "";
-            
+
             //creating place holders in format: @0,@1,@2 etc...
             for (int i = 0; i < pkSize; i++)
             {
@@ -139,11 +136,11 @@ namespace Coupon_Web.DAL
             }
             //execute.
             SqlDataReader reader = cmdSql.ExecuteReader();
-            
+
             bool tmp = reader.HasRows;
             reader.Close();
             return tmp;
         }
-    
+
     }
 }

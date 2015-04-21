@@ -15,15 +15,3 @@ C:\Users\shimi\Documents\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.pdb
 C:\Users\shimi\Documents\coupon-web\Coupon-Web\bin\Coupon-Web.dll.config
 C:\Users\shimi\Documents\coupon-web\Coupon-Web\bin\Coupon-Web.dll
 C:\Users\shimi\Documents\coupon-web\Coupon-Web\bin\Coupon-Web.pdb
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.dll.config
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.dll
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.pdb
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.dll
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.pdb
-C:\Users\matan\Downloads\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.csprojResolveAssemblyReference.cache
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.dll.config
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.dll
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\bin\Coupon-Web.pdb
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.csprojResolveAssemblyReference.cache
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.dll
-C:\Users\shimi\Downloads\coupon-web\coupon-web\coupon-web\Coupon-Web\obj\Debug\Coupon-Web.pdb
